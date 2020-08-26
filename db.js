@@ -8,5 +8,5 @@ exports.pool = new pg.Pool ({
 //  port: 5432,
 //  password: process.env.ENV_PASSWORD,
   connectionString: process.env.DATABASE_URL,
-  ssl: true,
+  ssl: false,
 });
