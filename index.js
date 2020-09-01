@@ -4,7 +4,8 @@ const db = require('./db');
 
 app.get('/', function(req, res) {
   let dt = new Date();
-  console.log('日時', dt.toLocaleString('ja'));
+  dt.setHours(dt.getHours() + 9);
+  console.log('日時', dt.toString());
   res.send('OK');
 });
 
