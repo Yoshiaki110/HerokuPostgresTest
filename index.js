@@ -6,6 +6,7 @@ app.get('/', function(req, res) {
   let dt = new Date();
   dt.setHours(dt.getHours() + 9);
   console.log('日時', dt.toString());
+  console.log('日時', dt.toLocaleString());
   res.send('OK');
 });
 
