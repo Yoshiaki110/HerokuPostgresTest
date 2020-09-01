@@ -3,6 +3,8 @@ const app = express();
 const db = require('./db');
 
 app.get('/', function(req, res) {
+  let dt = new Date();
+  console.log('日時', dt.toLocaleString('ja'));
   res.send('OK');
 });
 
